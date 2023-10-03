@@ -23,7 +23,7 @@ The TinyGo variant
 
 ```console
 cd go
-make tiny
+make tinygo
 ```
 
 ### Start vite

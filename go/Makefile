@@ -9,7 +9,7 @@ build:
 	@echo "Copying wasm_exec.js"
 	cp $(shell go env GOROOT)/misc/wasm/wasm_exec.js ../wasmtest/public/
 
-tiny:
+tinygo:
 	@echo "Building with tinygo ..."
 	tinygo build  -o $(BINARY_NAME) -target=wasm main.go
 	@echo "Copying wasm_exec.js from tinygo"
