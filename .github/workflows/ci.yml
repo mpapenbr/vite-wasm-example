@@ -36,7 +36,9 @@ jobs:
         run: make tinygo
 
       - name: Install dependencies
+        working-directory: ./wasmtest
         run: yarn install
 
       - name: Build JS
+        working-directory: ./wasmtest
         run: yarn build
